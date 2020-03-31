@@ -3,7 +3,7 @@
 ```sql
 mysql> install plugin server_audit soname "server_audit.so";
 mysql> set @@global.server_audit_events="QUERY_DML_ONLY_SELECT";
-mysql> set @@global.server_audit_incl_tables="ordçer,sbtest";
+mysql> set @@global.server_audit_incl_tables="order,sbtest";
 mysql> set @@global.server_audit_logging=1;
 ```
 
