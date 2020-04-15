@@ -2467,6 +2467,8 @@ static int server_audit_init(void *p __attribute__((unused)))
   coll_init(&incl_user_coll);
   coll_init(&excl_user_coll);
 
+  update_incl_tables(NULL, NULL, NULL, &incl_tables);
+
   if (incl_users)
   {
     if (excl_users)
